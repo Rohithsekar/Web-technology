@@ -1,0 +1,15 @@
+A DispatcherServlet is a key component in the Spring Framework's web MVC (Model-View-Controller) architecture. It acts as a central hub or front controller for processing incoming web 
+requests and dispatching them to the appropriate handlers (controllers) for further processing.
+
+When a web request is received, the DispatcherServlet intercepts it and analyzes the request URL to determine the appropriate handler mapping and controller for processing the request. It
+consults the configured handler mappings to find the appropriate controller that can handle the request.
+
+The DispatcherServlet also manages other components involved in request processing, such as view resolvers for rendering the response, and interceptors for handling cross-cutting concerns
+like logging, security, or authentication. It coordinates the execution flow and delegates the request to the chosen controller, which performs the necessary business logic and prepares 
+the response.
+
+Once the controller has processed the request, it returns a model object or a view name to the DispatcherServlet. The DispatcherServlet then consults the configured view resolvers to find
+the appropriate view template for rendering the response. It passes the model object to the selected view, which generates the final response HTML, JSON, XML, or any other format.
+
+The DispatcherServlet plays a crucial role in decoupling the web framework from the application-specific controllers and views. It provides a flexible and extensible architecture for
+handling web requests and processing responses in a consistent and modular manner.
